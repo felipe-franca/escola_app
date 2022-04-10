@@ -15,7 +15,7 @@ $_SESSION['operation'] = 'create_user';
 <div class='container'>
     <div class='main-list'>
         <div class='edit-form'>
-            <form action="../middlewares/handleLogin.php" method='POST'>
+            <form action="../middlewares/handleUser.php" method='POST'>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome">
 
