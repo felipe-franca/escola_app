@@ -15,7 +15,7 @@ $_SESSION['operation'] = 'create_user';
 <div class='container'>
     <div class='main-list'>
         <div class='edit-form'>
-            <form action="../middlewares/handleRequest.php" method='POST'>
+            <form action="../middlewares/handleLogin.php" method='POST'>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome">
 
@@ -27,7 +27,7 @@ $_SESSION['operation'] = 'create_user';
                 </select>
 
                 <label for="mensalidade">Mensalidade</label>
-                <input type="number" name="mensalidade" id="mensalidade" >
+                <input type="number" name="mensalidade" id="mensalidade">
                 <br>
                 <button class='btn btn-success' type="submit">
                     Criar

@@ -23,6 +23,17 @@ class UserRepository
         return $result;
     }
 
+    public function findByName($name)
+    {
+        $conn = $this->db->connect();
+        $sql = "SELECT senha FROM usuario WHERE nome LIKE ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$name]);
+        $result = $stmt->fetchAll();
+
+        return $result[0];
+    }
+
     public function findById($value)
     {
         $conn = $this->db->connect();

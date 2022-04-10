@@ -18,7 +18,7 @@ class UsersController
         return $userRepo->findById($userId);
     }
 
-    public static function findUser($aName)
+    public static function findByName($aName)
     {
         $userRepo = new UserRepository();
         return $userRepo->findByName($aName);
