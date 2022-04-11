@@ -16,7 +16,7 @@ $userData = UsersController::findById($userId);
 <div class='container'>
     <div class='main-list'>
         <div class='edit-form'>
-            <form action="../middlewares/handleLogin.php" method='POST'>
+            <form action="../middlewares/handleUser.php" method='POST'>
                 <label for="id">Matricula</label>
                 <input class='not-allowed' type="number" name="id" id="id" value=<?php echo $userData['id'] ?>>
 
